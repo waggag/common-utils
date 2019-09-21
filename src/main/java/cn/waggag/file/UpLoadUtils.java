@@ -1,4 +1,4 @@
-package cn.waggag.common.file;
+package cn.waggag.file;
 
 import java.util.UUID;
 
@@ -40,7 +40,7 @@ public class UpLoadUtils {
     /**
      * 用户获取随机文件目录
      * @param fileName 文件名称
-     * @return 随机地目录
+     * @return 随机两层目录
      */
     public static String getDir(String fileName) {
         int i = fileName.hashCode();
@@ -49,6 +49,6 @@ public class UpLoadUtils {
         for (int k = 0; k < 8 - j; k++) {
             hex = "0" + hex;
         }
-        return "/" + hex.charAt(0) + "/" + hex.charAt(1);
+        return "\\" + hex.charAt(0) + "\\" + hex.charAt(1)+"\\";
     }
 }

@@ -1,4 +1,4 @@
-package cn.waggag.common.file;
+package cn.waggag.file;
 
 import org.junit.Assert;
 import org.junit.Test;
